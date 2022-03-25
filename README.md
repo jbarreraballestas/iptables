@@ -17,9 +17,9 @@
 iptables -F
 ```
 
-**Borrar todas las reglas**
+**Cambia la politica de entrada por defecto a rechazar**
 ```
-iptables -F
+iptables -P INPUT DROP
 ```
 
 
