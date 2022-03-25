@@ -24,6 +24,6 @@ iptables -P INPUT DROP
 
 **Cambia la regla de entrada (-A INPUT) para aceptar (-j ACCEPT) paquetes tcp (-p tcp) de cualquier origen (-s 0/0) a cualquier destino (-d 0/0) en el puerto 22 (--dport 22)**
 ```
-iptables -P INPUT DROP
-```
 iptables -A INPUT -p tcp -s 0/0 -d 0/0 --dport 22 -j ACCEPT
+```
+
